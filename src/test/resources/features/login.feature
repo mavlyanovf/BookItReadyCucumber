@@ -1,9 +1,10 @@
+
+#@test
 Feature: Login
 
-  @login
-  Scenario: teacher login
+
+  Scenario: user login
     Given user on the login page
-    When user logs in using "myemail@gmail.com" and "mypassword"
-#    And title should be "my application title"
-#    And there should be 4,5 menu options
-   Then homepage should be displayed
+    When user logs in using "ucharlot7y@nbcnews.com" and "archibaldmelloy"
+    And title should be "bookit"
+    Then homepage should be displayed

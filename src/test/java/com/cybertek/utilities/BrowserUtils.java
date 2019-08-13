@@ -486,5 +486,17 @@ public class BrowserUtils {
         new WebDriverWait(Driver.getDriver(), Integer.valueOf(ConfigurationReader.getProperty("SHORT_WAIT"))).
                 until(ExpectedConditions.stalenessOf(Driver.getDriver().findElement(by)));
     }
+    public static void navigateToModule(WebDriver driver, String tab, String module){
+        String tabLocator = "//a[contains(text(),'"+tab+"') and contains(@class, 'navbar-link')]";
+        String moduleLocator = "//a[contains(text(),'"+module+"') and contains(@class, 'navbar-item')]";
+//        driver.findElement(By.xpath(tabLocator)).click();
+       BrowserUtils.clickWithWait(driver, By.xpath(tabLocator), 5);
+//        SeleniumUtils.waitPlease(1);
+        driver.findElement(By.xpath(moduleLocator)).click();
+
+//        SeleniumUtils.clickWithWait(driver, By.xpath(moduleLocator), 5);
+
+//        SeleniumUtils.waitPlease(2);
+    }
 
 }

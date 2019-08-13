@@ -18,7 +18,7 @@ public class Hooks {
         System.out.println("I am setting up the test from the Hooks class!");
     }
 
-//    @After
+    @After
     public void tearDown(Scenario scenario){
         System.out.println("I am reporting the results");
 //       To take screenshot when current scenario fails
