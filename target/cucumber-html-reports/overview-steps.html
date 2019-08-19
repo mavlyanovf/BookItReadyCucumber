@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+              <td>1</td>
+            <td>15 Aug 2019, 23:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">HomePageStepDefinitions.homepage_should_be_displayed()</td>
+              <td>5</td>
+              <td class="duration" data-value="583756160">0.583</td>
+              <td class="duration" data-value="583756160">1.621</td>
+              <td class="duration" data-value="2918780800">2.918</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDefinitions.location_should_be(String)</td>
+              <td>11</td>
+              <td class="duration" data-value="73604127">0.073</td>
+              <td class="duration" data-value="73604127">0.149</td>
+              <td class="duration" data-value="809645400">0.809</td>
+              <td class="failed">9.09%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDefinitions.title_should_be(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="282301600">0.282</td>
+              <td class="duration" data-value="282301600">0.282</td>
+              <td class="duration" data-value="282301600">0.282</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>30</td>
+              <td class="duration" data-value="5447774586">5.447</td>
+              <td class="duration" data-value="5447774586">16.055</td>
+              <td class="duration" data-value="163433237600">2:43.433</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.tearDown(Scenario)</td>
+              <td>30</td>
+              <td class="duration" data-value="2229339820">2.229</td>
+              <td class="duration" data-value="2229339820">9.406</td>
+              <td class="duration" data-value="66880194600">1:6.880</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageStepDefinitions.user_logs_in_as_a(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3426909250">3.426</td>
+              <td class="duration" data-value="3426909250">4.522</td>
+              <td class="duration" data-value="6853818500">6.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageStepDefinitions.user_logs_in_as_a_team_lead()</td>
+              <td>1</td>
+              <td class="duration" data-value="3479194100">3.479</td>
+              <td class="duration" data-value="3479194100">3.479</td>
+              <td class="duration" data-value="3479194100">3.479</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageStepDefinitions.user_logs_in_as_a_team_member()</td>
+              <td>1</td>
+              <td class="duration" data-value="2070118500">2.070</td>
+              <td class="duration" data-value="2070118500">2.070</td>
+              <td class="duration" data-value="2070118500">2.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageStepDefinitions.user_logs_in_using_and(String,String)</td>
+              <td>26</td>
+              <td class="duration" data-value="7243742150">7.243</td>
+              <td class="duration" data-value="7243742150">31.266</td>
+              <td class="duration" data-value="188337295900">3:8.337</td>
+              <td class="failed">84.62%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageStepDefinitions.user_on_the_login_page()</td>
+              <td>38</td>
+              <td class="duration" data-value="11868741710">11.868</td>
+              <td class="duration" data-value="11868741710">40.768</td>
+              <td class="duration" data-value="451012185000">7:31.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MapDetailsStepDefinitions.following_team_members_should_be_displayed(String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="9000">0.000</td>
+              <td class="duration" data-value="9000">0.000</td>
+              <td class="duration" data-value="9000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MapDetailsStepDefinitions.i_should_be_able_to_see_room(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1099501200">1.099</td>
+              <td class="duration" data-value="1099501200">1.099</td>
+              <td class="duration" data-value="1099501200">1.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MapDetailsStepDefinitions.the_user_goes_to_the_page(String)</td>
+              <td>11</td>
+              <td class="duration" data-value="383048654">0.383</td>
+              <td class="duration" data-value="383048654">0.686</td>
+              <td class="duration" data-value="4213535200">4.213</td>
+              <td class="failed">81.82%</td>
+            </tr>
+                      <tr>
+              <td class="location">MapDetailsStepDefinitions.the_user_should_be_able_to_see_following_conference_rooms(String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="16800">0.000</td>
+              <td class="duration" data-value="16800">0.000</td>
+              <td class="duration" data-value="16800">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyDetailsStepDefinitions.the_Title_of_member_should_be(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1009067375">1.009</td>
+              <td class="duration" data-value="1009067375">1.167</td>
+              <td class="duration" data-value="4036269500">4.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyDetailsStepDefinitions.the_user_should_see_their_information(String,String&gt;)</td>
+              <td>10</td>
+              <td class="duration" data-value="5202286480">5.202</td>
+              <td class="duration" data-value="5202286480">7.477</td>
+              <td class="duration" data-value="52022864800">52.022</td>
+              <td class="failed">80.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RoomDetailsStepDefinitions.correct_room_information_should_be_displayed_for_light_side()</td>
+              <td>1</td>
+              <td class="duration" data-value="346911800">0.346</td>
+              <td class="duration" data-value="346911800">0.346</td>
+              <td class="duration" data-value="346911800">0.346</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>17</td>
+            <td>174</td>
+            <td class="duration">5.447</td>
+            <td class="duration">7:31.012</td>
+            <td class="duration">15:47.795</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

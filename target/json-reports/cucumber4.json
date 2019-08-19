@@ -1,0 +1,123 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10961676800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "user login",
+        "description": "",
+        "id": "login;user-login",
+        "after": [
+          {
+            "result": {
+              "duration": 9406435200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17260318900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4397014200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"ucharlot7y@nbcnews.com\" and \"archibaldmelloy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ucharlot7y@nbcnews.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"archibaldmelloy\"",
+                  "offset": 48
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 282301600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "title should be \"bookit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bookit\"",
+                  "offset": 16
+                }
+              ],
+              "location": "HomePageStepDefinitions.title_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 696864600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "homepage should be displayed",
+            "match": {
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\login\\login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
