@@ -1,4 +1,4 @@
-@location
+@regression
 Feature: campus locations
 
   Background:

@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Adding new employee",
+        "description": "",
+        "id": "api-cucmber-test;adding-new-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26884007701,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I post a new Employee with 1100 id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1100",
+                  "offset": 27
+                }
+              ],
+              "location": "API_TestsStepDefenitions.i_post_a_new_Employee_with_id(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65084401,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Response Json should contain Employee info",
+            "match": {
+              "location": "API_TestsStepDefenitions.response_Json_should_contain_Employee_info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203004600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I send a GET request with \"1100\" id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1100\"",
+                  "offset": 26
+                }
+              ],
+              "location": "API_TestsStepDefenitions.i_send_a_GET_request_with_id(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8355201,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "employee Json response Data should match the posted Json data",
+            "match": {
+              "location": "API_TestsStepDefenitions.employee_Json_response_Data_should_match_the_posted_Json_data()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "API Cucmber Test",
+    "description": "",
+    "id": "api-cucmber-test",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\API_Cucumber\\API_POST_Cucumber.feature",
+    "tags": []
+  }
+]

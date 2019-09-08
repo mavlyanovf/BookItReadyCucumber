@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         //where is the implementation for features
         glue = {"com/cybertek/step_definitions"}
 //        ,dryRun=true
-        ,        tags = "@homepage"
+        ,        tags = "@regression"
 )
 public class SmokeTestRunner2 {
 

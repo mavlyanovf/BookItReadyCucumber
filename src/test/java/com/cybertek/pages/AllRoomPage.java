@@ -33,7 +33,7 @@ public class AllRoomPage {
     public WebElement google;
 
     public WebElement getRoom(String roomName){
-        return Driver.getDriver().findElement(By.partialLinkText(roomName));
+        return Driver.getDriver().findElement(By.linkText(roomName));
     }
 
 }

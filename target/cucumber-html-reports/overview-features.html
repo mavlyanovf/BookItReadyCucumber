@@ -42,164 +42,17 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Features Overview</title>
+<title>Cucumber Reports (no 1) - Error Page</title>
 
 
-  <script type="text/javascript">
-  $(document).ready(function() {
-
-    var chartData = {
-        datasets: [{
-            data: [
-                93,
-                15,
-                6,
-                0,
-                0
-            ],
-            backgroundColor: [
-                "#00B000",
-                "#FF3030",
-                "#88AAFF",
-                "#F5F28F",
-                "#F5B975"
-            ]
-        }],
-        labels: [
-            "Passed",
-            "Failed",
-            "Skipped",
-            "Pending",
-            "Undefined"
-        ]
-    };
-
-    var context = document.getElementById("steps-chart");
-    window.myBar = new Chart(context, {
-        type: "doughnut",
-        data: chartData,
-        options: {
-            title: {
-                display: true,
-                fontSize: 20,
-                text: "Steps"
-            },
-            responsive: true,
-            legend: {
-                display: false
-            },
-            tooltips: {
-                callbacks: {
-                    label: function(tooltipItem, data) {
-                        var allData = data.datasets[tooltipItem.datasetIndex].data;
-                        var tooltipLabel = data.labels[tooltipItem.index];
-                        var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 114) / 100;
-                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
-                    }
-                }
-            }
-        }
-    });
-
-});  $(document).ready(function() {
-
-    var chartData = {
-        datasets: [{
-            data: [
-                15,
-                15
-            ],
-            backgroundColor: [
-                "#00B000",
-                "#FF3030"
-            ]
-        }],
-        labels: [
-            "Passed",
-            "Failed"
-        ]
-    };
-
-    var context = document.getElementById("scenarios-chart");
-    window.myBar = new Chart(context, {
-        type: "doughnut",
-        data: chartData,
-        options: {
-            title: {
-                display: true,
-                fontSize: 20,
-                text: "Scenarios"
-            },
-            circumference: Math.PI,
-            rotation: Math.PI,
-            cutoutPercentage: 70,
-            responsive: true,
-            legend: {
-                display: false
-            },
-            tooltips: {
-                callbacks: {
-                    label: function(tooltipItem, data) {
-                        var allData = data.datasets[tooltipItem.datasetIndex].data;
-                        var tooltipLabel = data.labels[tooltipItem.index];
-                        var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 30) / 100;
-                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
-                    }
-                }
-            }
-        }
-    });
-
-});  $(document).ready(function() {
-
-    var chartData = {
-        datasets: [{
-            data: [
-                   2,
-                   4
-               ],
-               backgroundColor: [
-                "#00B000",
-                "#FF3030"
-            ]
-        }],
-        labels: [
-            "Passed",
-            "Failed"
-        ]
-    };
-
-    var context = document.getElementById("features-chart");
-    window.myBar = new Chart(context, {
-        type: "pie",
-        data: chartData,
-        options: {
-            title: {
-                display: true,
-                fontSize: 20,
-                text: "Features"
-            },
-            responsive: true,
-            legend: {
-                display: false
-            },
-            tooltips: {
-                callbacks: {
-                    label: function(tooltipItem, data) {
-                        var allData = data.datasets[tooltipItem.datasetIndex].data;
-                        var tooltipLabel = data.labels[tooltipItem.index];
-                        var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
-                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
-                    }
-                }
-            }
-        }
-    });
-
-});  </script>
+  <style>
+  .error-message {
+    color:red;
+    font-weight: bold;
+    background-color: lightpink;
+    font-family: monospace;
+  }
+  </style>
 </head>
 
 <body>
@@ -209,7 +62,7 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation"  class="active" ><a href="overview-features.html">Features</a></li>
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
                 <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
@@ -234,7 +87,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
               <td>1</td>
-            <td>15 Aug 2019, 23:49</td>
+            <td>04 Sep 2019, 06:32</td>
     </tr>
   </tbody>
 </table>
@@ -247,228 +100,65 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Features Statistics</h2>
-          <p>The following graphs show passing and failing statistics for features</p>
+    <h2>Error</h2>
+          <p>Something went wrong with project Cucumber HTML Reports, build 1</p>
       </div>
 </div>
-
-
-  <div class="container-fluid" id="charts">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div id="featureChartCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#featureChartCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#featureChartCarousel" data-slide-to="1"></li>
-            <li data-target="#featureChartCarousel" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <canvas id="features-chart" height="120"></canvas>
-            </div>
-
-            <div class="item">
-              <canvas id="scenarios-chart" height="120"></canvas>
-            </div>
-
-            <div class="item">
-              <canvas id="steps-chart" height="120"></canvas>
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#featureChartCarousel" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#featureChartCarousel" role="button" data-slide="next">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-
 
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      
-<table id="tablesorter" class="stats-table table-hover">
-  
-<thead>
-  <tr class="header dont-sort">
-        <th></th>
-    <th colspan="6">Steps</th>
-    <th colspan="3">Scenarios</th>
-    <th colspan="2">Features</th>
-  </tr>
-  <tr>
-    <th>Feature</th>
-        <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
-    <th class="skipped">Skipped</th>
-    <th class="pending">Pending</th>
-    <th class="undefined">Undefined</th>
-    <th class="total">Total</th>
-
-    <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
-    <th class="total">Total</th>
-
-    <th>Duration</th>
-    <th>Status</th>
-  </tr>
-</thead>
-
-
-  <tbody>
-          <tr>
-        <td class="tagname"><a href="report-feature_107317357.html">Home page</a></td>
-
-        <td      class="passed"    >16</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="70892745800">1:10.892</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_1_769232869.html">Map page details</a></td>
-
-        <td      class="passed"    >5</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">10</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >2</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="125910740600">2:5.910</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_2_2753831473.html">campus locations</a></td>
-
-        <td      class="passed"    >30</td>
-        <td      class="failed"    >10</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >10</td>
-        <td class="total">11</td>
-
-        <td class="duration" data-value="238804488900">3:58.804</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_3_2794971911.html">Login</a></td>
-
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="22636499300">22.636</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_4_3555090519.html">My details page</a></td>
-
-        <td      class="passed"    >36</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">40</td>
-
-        <td  class="passed"    >8</td>
-        <td  class="failed"    >2</td>
-        <td class="total">10</td>
-
-        <td class="duration" data-value="252164443100">4:12.164</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_5_3710286989.html">room information functionality</a></td>
-
-        <td      class="passed"    >2</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="7073530400">7.073</td>
-        <td class="failed">Failed</td>
-      </tr>
-      </tbody>
-
-  <tfoot class="total">
-    <tr>
-      <td></td>
-      <td>93</td>
-      <td>15</td>
-      <td>6</td>
-      <td>0</td>
-      <td>0</td>
-      <td>114</td>
-
-      <td>15</td>
-      <td>15</td>
-      <td>30</td>
-
-      <td class="duration">11:57.482</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td></td>
-            <td>81.58%</td>
-      <td>13.16%</td>
-      <td>5.26%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td>50.00%</td>
-      <td>50.00%</td>
-      <td></td>
-      <td></td>
-      <td>33.33%</td>
-    </tr>
-  </tfoot>
-</table>
-
+      <div class="message">
+        <pre>net.masterthought.cucumber.ValidationException: File 'C:\Users\FARRUKH\IdeaProjects\BookItReadyCucumber\target\json-reports\cucumber3.json' is not proper Cucumber report!
+	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:99)
+	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:71)
+	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:88)
+	at net.masterthought.cucumber.CucumberReportGeneratorMojo.execute(CucumberReportGeneratorMojo.java:198)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (InputStreamReader); line: 1, column: 0]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3049)
+	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:93)
+	... 25 more
+</pre>
+      </div>
+      <div>Trying to generate report from following files. Make sure they are valid cucumber report files:</div>
+      <div class="error-files">
+        <pre>
+           C:\Users\FARRUKH\IdeaProjects\BookItReadyCucumber\target\json-reports\cucumber2.json
+           C:\Users\FARRUKH\IdeaProjects\BookItReadyCucumber\target\json-reports\cucumber3.json
+           C:\Users\FARRUKH\IdeaProjects\BookItReadyCucumber\target\json-reports\cucumber4.json
+           C:\Users\FARRUKH\IdeaProjects\BookItReadyCucumber\target\json-reports\cucumber5.json
+                  </pre>
+      </div>
     </div>
   </div>
 </div>
+
 
 <nav class="navbar navbar-default" id="footer">
   <div class="container-fluid">

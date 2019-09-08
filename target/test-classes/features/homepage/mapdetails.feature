@@ -1,5 +1,5 @@
 
-@homepage
+@smoke
 Feature: Map page details
 
 Background:

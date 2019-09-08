@@ -1,5 +1,5 @@
 
-@homepage
+@smoke
 Feature: Home page
 
   Background:

@@ -1,4 +1,4 @@
-@reservation
+@regression
   Feature: room information functionality
 
     Scenario: Room details

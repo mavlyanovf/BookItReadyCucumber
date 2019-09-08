@@ -1,4 +1,4 @@
-@reservation
+@regression
 Feature: My details page
 
 

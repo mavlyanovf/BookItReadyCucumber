@@ -7,6 +7,7 @@ import com.cybertek.utilities.ExcelUtils;
 import cucumber.api.java.en.Then;
 import org.apache.poi.ss.usermodel.*;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 public class RoomDetailsStepDefinitions {
-    String path = "./src/test/resources/roomcapacity.xlsx";
+    String path = "./src/test/resources/features/excel_files/roomcapacity.xlsx";
     FileInputStream fileInputStream  ;
     Workbook workbook  ;
     Sheet sheet;
@@ -30,20 +31,18 @@ public class RoomDetailsStepDefinitions {
 //get the room names from excel file
 //        click on each room
 //        based on the room information from excel verify user information
-//      ExcelUtils excelUtils=new ExcelUtils(path, "sheet1");
-//        List<Map<String, String>>roomMapList=excelUtils.getDataList();
+      ExcelUtils excelUtils=new ExcelUtils(path, "sheet1");
+        List<Map<String, String>>roomMapList=excelUtils.getDataList();
 
-        AllRoomPage allRoomPage=new AllRoomPage();
+        for (Map<String, String> room : roomMapList) {
+            System.out.println(room.get("name"));
 
-        allRoomPage.getRoom("apple").click();
+            AllRoomPage allRoomPage = new AllRoomPage();
+            allRoomPage.getRoom(room.get("name")).click();
+        }
 
 
-//allRoomPage.clickRoomName("google");
-//String capacity=allRoomPage.capacity6.getText();
-// String equipmentTv=allRoomPage.equipmentTv.getText();
-// String equipmentWB=allRoomPage.equipmentWhiteBoard.getText();
-//
-//        System.out.println(capacity+"/"+equipmentTv+"/"+equipmentWB);
+
                }
 
 

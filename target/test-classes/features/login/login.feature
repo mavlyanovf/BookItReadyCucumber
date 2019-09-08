@@ -1,4 +1,4 @@
-@login
+@smoke
  Feature: Login
 
 

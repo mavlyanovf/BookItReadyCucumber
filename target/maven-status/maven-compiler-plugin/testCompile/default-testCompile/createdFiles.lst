@@ -17,6 +17,7 @@ com\cybertek\step_definitions\MyDetailsStepDefinitions.class
 com\cybertek\step_definitions\HomePageStepDefinitions.class
 com\cybertek\step_definitions\RoomDetailsStepDefinitions.class
 com\cybertek\utilities\BrowserUtils$1.class
+com\cybertek\SeleniumGrid\ParallelCrossBrowser.class
 com\cybertek\pages\MyTeamPage.class
 com\cybertek\utilities\ExcelUtils.class
 com\cybertek\runners\SmokeTestRunner3.class
