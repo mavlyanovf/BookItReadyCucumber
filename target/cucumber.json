@@ -1,88 +1,929 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "line": 4,
-        "name": "Adding new employee",
+        "line": 5,
+        "name": "",
         "description": "",
-        "id": "api-cucmber-test;adding-new-employee",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3704021800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5846866500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "login as a team lead",
+        "description": "",
+        "id": "home-page;login-as-a-team-lead",
+        "after": [
+          {
+            "result": {
+              "duration": 681996500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 26884007701,
+              "duration": 1664133800,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I post a new Employee with 1100 id",
+            "line": 10,
+            "name": "user logs in as a team lead",
             "match": {
-              "arguments": [
-                {
-                  "val": "1100",
-                  "offset": 27
-                }
-              ],
-              "location": "API_TestsStepDefenitions.i_post_a_new_Employee_with_id(Integer)"
+              "location": "LoginPageStepDefinitions.user_logs_in_as_a_team_lead()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 65084401,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Response Json should contain Employee info",
-            "match": {
-              "location": "API_TestsStepDefenitions.response_Json_should_contain_Employee_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 203004600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I send a GET request with \"1100\" id",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1100\"",
-                  "offset": 26
-                }
-              ],
-              "location": "API_TestsStepDefenitions.i_send_a_GET_request_with_id(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8355201,
+              "duration": 858461700,
               "status": "passed"
             },
             "line": 11,
-            "name": "employee Json response Data should match the posted Json data",
+            "name": "homepage should be displayed",
             "match": {
-              "location": "API_TestsStepDefenitions.employee_Json_response_Data_should_match_the_posted_Json_data()"
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 487800600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the Title of member should be \"team-leader\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team-leader\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyDetailsStepDefinitions.the_Title_of_member_should_be(String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@api"
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3180775900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3548161300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "login as a team member",
+        "description": "",
+        "id": "home-page;login-as-a-team-member",
+        "after": [
+          {
+            "result": {
+              "duration": 646222300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1424652200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user logs in as a team member",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_logs_in_as_a_team_member()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60039400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "homepage should be displayed",
+            "match": {
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 771155400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the Title of member should be \"student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyDetailsStepDefinitions.the_Title_of_member_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3173895100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3730247600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "login as different members",
+        "description": "",
+        "id": "home-page;login-as-different-members;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 639537700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1420869200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user logs in as a \"team_lead\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team_lead\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65655600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "homepage should be displayed",
+            "match": {
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 416482000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the Title of member should be \"team-leader\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team-leader\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyDetailsStepDefinitions.the_Title_of_member_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3355446600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3595970900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "login as different members",
+        "description": "",
+        "id": "home-page;login-as-different-members;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 642306500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1423129700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user logs in as a \"team_member\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team_member\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61087100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "homepage should be displayed",
+            "match": {
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 453849700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the Title of member should be \"student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyDetailsStepDefinitions.the_Title_of_member_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "API Cucmber Test",
+    "name": "Home page",
     "description": "",
-    "id": "api-cucmber-test",
+    "id": "home-page",
     "keyword": "Feature",
-    "uri": "src\\test\\resources\\features\\API_Cucumber\\API_POST_Cucumber.feature",
-    "tags": []
+    "uri": "src\\test\\resources\\features\\homepage\\homepage.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3400797300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1584177900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"strayford84@e-recht24.de\" and \"carlosmichie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"strayford84@e-recht24.de\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"carlosmichie\"",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4008910800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Light side room",
+        "description": "",
+        "id": "map-page-details;light-side-room",
+        "after": [
+          {
+            "result": {
+              "duration": 640963800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 623689800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be able to see \"princeton\" room",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"princeton\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MapDetailsStepDefinitions.i_should_be_able_to_see_room(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3053428700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1513138600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"strayford84@e-recht24.de\" and \"carlosmichie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"strayford84@e-recht24.de\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"carlosmichie\"",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3655689200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Light side all rooms",
+        "description": "",
+        "id": "map-page-details;light-side-all-rooms",
+        "after": [
+          {
+            "result": {
+              "duration": 634326300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 614782000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user should be able to see following conference rooms:",
+            "match": {
+              "location": "MapDetailsStepDefinitions.the_user_should_be_able_to_see_following_conference_rooms(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "harvard"
+                ]
+              },
+              {
+                "cells": [
+                  "yale"
+                ]
+              },
+              {
+                "cells": [
+                  "princeton"
+                ]
+              },
+              {
+                "cells": [
+                  "stanford"
+                ]
+              },
+              {
+                "cells": [
+                  "duke"
+                ]
+              },
+              {
+                "cells": [
+                  "berkeley"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3360890500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1589518300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"strayford84@e-recht24.de\" and \"carlosmichie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"strayford84@e-recht24.de\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"carlosmichie\"",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3637435800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Team member test",
+        "description": "",
+        "id": "map-page-details;team-member-test",
+        "after": [
+          {
+            "result": {
+              "duration": 658285300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 204203600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user goes to the \"my team\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"my team\"",
+                  "offset": 21
+                }
+              ],
+              "location": "MapDetailsStepDefinitions.the_user_goes_to_the_page(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 525248300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "following team members should be displayed:",
+            "match": {
+              "location": "MapDetailsStepDefinitions.following_team_members_should_be_displayed(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Rosanne"
+                ]
+              },
+              {
+                "cells": [
+                  "Edy"
+                ]
+              },
+              {
+                "cells": [
+                  "Carlos"
+                ]
+              },
+              {
+                "cells": [
+                  "Francesca"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Map page details",
+    "description": "",
+    "id": "map-page-details",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\homepage\\mapdetails.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3609642100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "user login",
+        "description": "",
+        "id": "login;user-login",
+        "after": [
+          {
+            "result": {
+              "duration": 637143300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3495597700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the login page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1519344500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"ucharlot7y@nbcnews.com\" and \"archibaldmelloy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ucharlot7y@nbcnews.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"archibaldmelloy\"",
+                  "offset": 48
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4813200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "title should be \"bookit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bookit\"",
+                  "offset": 16
+                }
+              ],
+              "location": "HomePageStepDefinitions.title_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62516400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "homepage should be displayed",
+            "match": {
+              "location": "HomePageStepDefinitions.homepage_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\login\\login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

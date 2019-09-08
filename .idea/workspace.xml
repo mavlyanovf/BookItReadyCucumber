@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a3433b6-c62a-4550-b67e-645816b23f63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/POJO/EmployeeCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/POJO/EmployeeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/SeleniumGrid/ParallelCrossBrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/API_TestsStepDefenitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/API_Cucumber/API_POST_Cucumber.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/AllRoomPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/AllRoomPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/SmokeTestRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/SmokeTestRunner2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/RoomDetailsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/RoomDetailsStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/excel_files/roomcapacity.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/excel_files/roomcapacity.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/homepage/homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/homepage/homepage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/homepage/mapdetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/homepage/mapdetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/locations/locations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/locations/locations.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/reservation/mydetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/reservation/mydetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/reservation/room_information_excel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/reservation/room_information_excel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookItApplicationTest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookItApplicationTest-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-1514915190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-1557184949.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-244366316.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-274297109.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-946968681.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_107317357.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_769232869.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_2_2753831473.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3_2794971911.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_4_3555090519.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_5_3710286989.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_1949143085.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_255761291.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_40591348.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4082898728.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded3.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded4.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded5.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded7.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-1.8.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-1.8.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber2.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber3.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber4.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber5.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Home page.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Map page details.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-My details page.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-campus locations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-room information functionality.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/AllRoomPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/AllRoomPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/SmokeTestRunner2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/SmokeTestRunner2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/RoomDetailsStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/RoomDetailsStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/excel_files/roomcapacity.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/excel_files/roomcapacity.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/homepage/homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/homepage/homepage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/homepage/mapdetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/homepage/mapdetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/locations/locations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/locations/locations.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/login/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/login/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/reservation/mydetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/reservation/mydetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/reservation/room_information_excel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/reservation/room_information_excel.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
               <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -148,15 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/reservation/mydetails.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -250,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/reservation/room_information_excel.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/runners/SmokeTestRunner2.java" />
         <option value="$PROJECT_DIR$/configuration.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/POJO/EmployeeCreate.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/POJO/EmployeeResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/API_TestsStepDefenitions.java" />
@@ -259,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/locations/locations.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CukesRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" />
       </list>
     </option>
   </component>
@@ -646,8 +568,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -661,7 +584,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287037" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3252315" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3252315" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298611" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3275463" />
@@ -933,16 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1036,6 +949,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

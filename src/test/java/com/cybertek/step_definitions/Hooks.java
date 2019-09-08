@@ -19,7 +19,7 @@ public class Hooks {
 //WebDriver driver;
 //    public static final String URL ="http://52.202.79.238:4444/wd/hub";
 
-//    @Before
+    @Before
     public void setUp() throws MalformedURLException {
 //        DesiredCapabilities caps=DesiredCapabilities.chrome();
 //        caps.setPlatform(Platform.ANY);
@@ -29,7 +29,7 @@ public class Hooks {
         System.out.println("I am setting up the test from the Hooks class!");
     }
 
-//    @After
+    @After
     public void tearDown(Scenario scenario){
         System.out.println("I am reporting the results");
 //       To take screenshot when current scenario fails
